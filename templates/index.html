@@ -1,8 +1,28 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<h1>Template</h1>
+<h1>Cards</h1>
+<form action="/" method="POST">
+    <label for="question">Question</label>
+    <textarea name="question" rows="4" cols="60"></textarea>
+    <label for="answer">Answer</label>
+    <textarea name="answer" rows="4" cols="60"></textarea>
+    <input id="submitBtn" type="submit" value="Add" />
+</form>
 {% endblock %}
 
 {% block body %}
+<div class="cardWrapper">
+    {% for card in cards %}
+    <div class="qa">
+        <div class="question">{{card["question"]}}</div>
+        <div class="answer">{{card["answer"]}}</div>
+        
+    </div>
+    <div class="btns">
+        <a href="/delete/{{card['id']}}" class="delete">❌</a>
+        <a  href="/update/{{card['id']}}" class="update" href="#">✍️</a>
+    </div>
+    {% endfor %}
+</div>
 {% endblock %}

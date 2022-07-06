@@ -13,4 +13,87 @@ h1 {
     background-color: cadetblue;
     font-size: 4rem;
     text-align: center;
+    border: 2px solid cadetblue;
+    border-radius: 10px;
+}
+
+h3 {
+    width: 50%;
+    margin: 0 auto;
+    color: cadetblue;
+    
+    font-size: 2rem;
+    text-align: center;
+  
+}
+
+form {
+    margin: 0 auto;
+    max-width: 800px;
+    /* max-height: 500px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    font-size: 1.3rem;
+}
+
+
+
+textarea {
+        border: 2px solid cadetblue;
+        border-radius: 10px;
+        font-size: 1.1rem;
+}
+
+
+input[type=submit] {
+    margin: 10px auto;
+    
+    width: 50%;
+    height: 60px; 
+    font-size: 2rem;
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.cardWrapper {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 10px;
+
+    font-size: 1.1rem;
+    margin: 15px auto;
+
+   
+    overflow: hidden;
+}
+
+.qa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid cadetblue;
+    
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 1.5rem;
+    
+}
+
+.update, .delete {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    
 }
