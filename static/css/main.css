@@ -1,0 +1,16 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    width: 100%;
+    color: white;
+    background-color: cadetblue;
+    font-size: 4rem;
+    text-align: center;
+}
