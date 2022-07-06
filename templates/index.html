@@ -2,7 +2,7 @@
 
 {% block head %}
 <h1>Cards</h1>
-<form submit="/">
+<form action="/" method="POST">
     <label for="question">Question</label>
     <textarea name="question" rows="4" cols="60"></textarea>
     <label for="answer">Answer</label>
@@ -13,13 +13,16 @@
 
 {% block body %}
 <div class="cardWrapper">
+    {% for card in cards %}
     <div class="qa">
-        <div class="question">Question in here</div>
-        <div class="answer">Answer in here</div>
+        <div class="question">{{card["question"]}}</div>
+        <div class="answer">{{card["answer"]}}</div>
+        
     </div>
     <div class="btns">
-        <button class="delete">❌</button>
-        <button class="update">✍️</button>
+        <a href="/delete/{{card['id']}}" class="delete">❌</a>
+        <a  href="/update/{{card['id']}}" class="update" href="#">✍️</a>
     </div>
+    {% endfor %}
 </div>
 {% endblock %}
