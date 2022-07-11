@@ -6,9 +6,15 @@ name = "pypi"
 [packages]
 flask = "*"
 flask-sqlalchemy = "*"
+gunicorn = "*"
 
 [dev-packages]
 pep8 = "*"
 
 [requires]
 python_version = "3.10"
+
+[scripts]
+start = "gunicorn app:app"
+dev = "bash -c \"export FLASK_DEBUG=1 && export FLASK_ENV='development' && FLASK_APP=app.py && flask run\" "
+

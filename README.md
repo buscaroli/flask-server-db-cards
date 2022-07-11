@@ -1,4 +1,4 @@
-# Learning Flask + SQLLite
+# Learning Flask + SQLite
 
 Implemented a flashcard-like site that allows the user to add, delete and update cards with Q&A.
 
