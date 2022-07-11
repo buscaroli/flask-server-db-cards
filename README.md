@@ -6,6 +6,10 @@ Implemented a flashcard-like site that allows the user to add, delete and update
 
 I am learning Python and Flask as part of the curriculum at futureproof.
 
+## Where to play with it
+
+The app is currently hosted on Heroku at [this address](https://flask-question-cards.herokuapp.com/)
+
 ## Tech
 
 - Python 3.\*
@@ -37,3 +41,8 @@ python / python3
 >>> db.create_all()
 >>> exit()
 ```
+
+## TODO
+
+- Add auth
+- Improve styling
